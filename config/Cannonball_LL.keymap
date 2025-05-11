@@ -81,7 +81,7 @@
                 // Mouse
                 &kp I &kp J
                 // Stick
-                &kp LEFT &kp UP &kp RIGHT &kp DOWN
+                &kp K &kp L &kp M &kp N
                 // Lever
                 &kp N1 &kp N2 &kp N3
                 &kp N4 &kp N5 &kp N6
@@ -92,7 +92,7 @@
                 // Center Push
                 // &kp QMARK
     	    >;
-            sensor-bindings = <&rot_kp V W>, <&scroll_move_x>, <&scroll_move_y>;
+            sensor-bindings = <&rot_kp V W>, <&scroll_move_y>, <&scroll_move_x>;
     	};
 
       SCROLL {              // BT設定、スクロールレイヤー
