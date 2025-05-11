@@ -8,12 +8,12 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10
 
 #define DEFAULT 0
-#define SCROLL 2
+#define SCROLL 1
 
 / {
   trackball_listener {
     scroller {
-        layers = <2>;
+        layers = <1>;
         input-processors = <
           &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
           &zip_x_scaler 0 16  // disable x scroller
@@ -92,7 +92,7 @@
                 // Center Push
                 // &kp QMARK
     	    >;
-            sensor-bindings = <&rot_kp V W>, <&scroll_move_y>, <&scroll_move_x>;
+            sensor-bindings = <&rot_kp V W>, <&scroll_move_x>, <&scroll_move_y>;
     	};
 
       SCROLL {              // BT設定、スクロールレイヤー
@@ -115,7 +115,7 @@
                 // Center Push
                 // &kp QMARK
     	    >;
-            sensor-bindings = <&rot_kp V W>, <&scroll_move_y>, <&scroll_move_x>;
+            sensor-bindings = <&rot_kp V W>, <&scroll_move_x>, <&scroll_move_y>;
     	};
     };
 };
