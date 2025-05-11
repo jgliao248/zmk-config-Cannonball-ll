@@ -75,9 +75,9 @@
     	DEFAULT {
             bindings = <
                 // Key
-                &mkp MB1    &kp A      &kp B  &kp C
+                &mkp MB2    &kp A      &kp B  &kp C
                 &mkp MB3    &mo SCROLL &kp D  &kp E
-                &mkp MB2    &kp F      &kp G  &kp H
+                &mkp MB1    &kp F      &kp G  &kp H
                 // Mouse
                 &kp I &kp J
                 // Stick
