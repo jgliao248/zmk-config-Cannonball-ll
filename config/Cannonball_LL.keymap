@@ -8,7 +8,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10
 
 #define DEFAULT 0
-#define SCROLL 2
+#define SCROLL 1
 
 / {
   trackball_listener {
