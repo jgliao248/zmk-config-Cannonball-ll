@@ -13,7 +13,7 @@
     /* Behaviors */
     // スクロール設定
     msc {
-        acceleration-exponent = <1>;      // 0
+        acceleration-exponent = <0>;      // 0
         time-to-max-speed-ms = <200>;     // 300
         delay-ms = <5>;                   // 10
     };
@@ -71,18 +71,18 @@
                 &mkp MB3   &kp LC(X)   &kp C_MUTE   &kp LSHFT
                 &mkp MB1   &kp LC(C)   &kp LS(TAB)  &kp LCTRL
                 // Mouse
-                &kp LC(C) &kp LC(V)
+                &kp RA(RS(TAB)) &kp RA(TAB)
                 // Stick
                 &kp UP &kp LEFT &kp DOWN &kp RIGHT
                 // Lever
-                &to DEFAULT_WIN &kp F11 &to DEFAULT_MAC
-                &to DEFAULT_WIN &kp F12 &to DEFAULT_MAC
+                &kp LC(LS(M)) &kp C_MUTE  &kp LC(LS(O))
+                &kp RC(RS(TAB)) &kp RC(TAB) &kp RC(TAB)
                 // Side
                 &kp_mkp HOME MB4 &kp LC(LS(LEFT)) &kp_mkp END MB5 &kp RC(RS(RIGHT))
                 // Back
                 &bt BT_SEL 0 &bt BT_SEL 1
     	    >;
-            sensor-bindings = <&rot_kp C_VOLUME_UP C_VOLUME_DOWN>, <&scroll_move_y>, <&scroll_move_x>;
+            sensor-bindings = <&rot_kp C_VOLUME_DOWN C_VOLUME_UP>, <&scroll_move_y>, <&scroll_move_x>;
     	};
 
         // MacOS用
