@@ -53,14 +53,14 @@
 
         kp_mkp_back: kp_mkp_back {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&mkp MB4>;
+            bindings = <&kp>, <&mkp>;
             #binding-cells = <0>;
             tapping-term-ms = <150>;
         };
 
         kp_mkp_fwd: kp_mkp_fwd {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&mkp MB5>;
+            bindings = <&kp>, <&mkp>;
             #binding-cells = <0>;
             tapping-term-ms = <150>;
         };
@@ -85,7 +85,7 @@
                 &to DEFAULT_WIN &kp F11 &to DEFAULT_MAC
                 &to DEFAULT_WIN &kp F12 &to DEFAULT_MAC
                 // Side
-                &kp_mkp_back HOME &kp LC(LS(LEFT)) &kp_mkp_fwd END &kp RC(RS(RIGHT))
+                &kp_mkp_back HOME MB4 &kp LC(LS(LEFT)) &kp_mkp_back END MB5 &kp RC(RS(RIGHT))
                 // Back
                 &bt BT_SEL 0 &bt BT_SEL 1
     	    >;
