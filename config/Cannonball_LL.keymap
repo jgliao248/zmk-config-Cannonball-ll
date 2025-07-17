@@ -52,7 +52,6 @@
 
         kp_mkp: kp_mkp {
             compatible = "zmk,behavior-hold-tap";
-            display-name = "kp_mkp";
             bindings = <&kp>, <&mkp>;
             #binding-cells = <0>;
             tapping-term-ms = <150>;
