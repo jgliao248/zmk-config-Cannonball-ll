@@ -54,14 +54,14 @@
         kp_mkp_back: kp_mkp_back {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&mkp>;
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
 
         kp_mkp_fwd: kp_mkp_fwd {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&mkp>;
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
     };
